@@ -1,9 +1,12 @@
-<?php namespace Atyagi\Elasticache;
+<?php
+
+namespace Atyagi\Elasticache;
 
 class ElasticacheConnector
 {
     /**
      * Create a new Memcached connection.
+     *
      * @param array $servers
      * @return false|\Memcached
      * @throws \RuntimeException
@@ -19,6 +22,10 @@ class ElasticacheConnector
         // Set Elasticache options here
         if (defined('\Memcached::OPT_CLIENT_MODE') && defined('\Memcached::DYNAMIC_CLIENT_MODE')) {
             $memcached->setOption(\Memcached::OPT_CLIENT_MODE, \Memcached::DYNAMIC_CLIENT_MODE);
+        }
+
+        if (defined('\Memcached::OPT_CLIENT_MODE') && defined('\Memcached::DYNAMIC_CLIENT_MODE')) {
+            $memcached->setOption(\Memcached::OPT_DISTRIBUTION, \Memcached::DISTRIBUTION_CONSISTENT);
         }
 
         // For each server in the array, we'll just extract the configuration and add

@@ -2,7 +2,8 @@
 
 use Mockery as m;
 
-class TestCase extends PHPUnit_Framework_TestCase {
+class TestCase extends PHPUnit_Framework_TestCase
+{
 
     /** @var  m\Mock */
     protected $mockApp;
@@ -16,6 +17,4 @@ class TestCase extends PHPUnit_Framework_TestCase {
     {
         m::close();
     }
-
-
-} 
+}
