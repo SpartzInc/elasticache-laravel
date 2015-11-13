@@ -12,7 +12,12 @@ This package requires the memcached extension for PHP. Please see [this link](ht
 
 To install this branch with composer, add this repository to your repositories configuration:
 ```
-
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/SpartzInc/elasticache-laravel"
+    }
+],
 ```
 
 And add `"atyagi/elasticache-laravel": "dev-autodiscovery"` to your composer.json dependencies.
