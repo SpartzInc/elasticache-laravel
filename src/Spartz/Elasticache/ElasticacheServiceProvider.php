@@ -1,6 +1,6 @@
 <?php
 
-namespace Atyagi\Elasticache;
+namespace Spartz\Elasticache;
 
 use GracefulCache\Repository\GracefulCacheRepository;
 use Illuminate\Support\ServiceProvider;

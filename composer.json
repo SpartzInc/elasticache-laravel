@@ -1,12 +1,14 @@
 {
-    "name": "atyagi/elasticache-laravel",
+    "name": "spartz/elasticache-laravel",
     "description": "Elasticache Drivers for Laravel Cache and Session",
     "keywords": ["laravel", "AWS", "Elasticache"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Ankit Tyagi",
-            "email": "ankit.tyagi.2@gmail.com"
+            "name": "Jonathan Rubins",
+            "email": "jrubins@spartzinc.com",
+            "homepage": "https://github.com/jrubins",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -24,7 +26,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Atyagi\\Elasticache": "src/"
+            "Spartz\\Elasticache": "src/"
         }
     },
     "minimum-stability": "stable"

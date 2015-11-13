@@ -1,5 +1,6 @@
 <?php
-use Atyagi\Elasticache\ElasticacheSessionHandler;
+
+use Spartz\Elasticache\ElasticacheSessionHandler;
 use Mockery as m;
 
 class ElasticacheSessionHandlerTest extends TestCase {
@@ -119,4 +120,4 @@ class ElasticacheSessionHandlerTest extends TestCase {
             ->andReturn($value);
     }
 
-} 
+}

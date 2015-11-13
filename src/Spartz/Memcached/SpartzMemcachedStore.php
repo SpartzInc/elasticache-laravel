@@ -1,6 +1,6 @@
 <?php
 
-namespace Atyagi\Elasticache;
+namespace Spartz\Memcached;
 
 use Illuminate\Cache\MemcachedStore;
 use Illuminate\Cache\StoreInterface;
