@@ -8,7 +8,7 @@ This package requires the memcached extension for PHP. Please see [this link](ht
 
 To install this branch with composer, add this as a dependency to your project:
 ```
-"spartz/elasticache-laravel": ""
+"spartz/elasticache-laravel": "~1.2"
 ```
 
 Once `composer update` is ran, add
