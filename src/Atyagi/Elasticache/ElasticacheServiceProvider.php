@@ -36,7 +36,7 @@ class ElasticacheServiceProvider extends ServiceProvider
 
             $this->app->make('cache')->extend('elasticache', function () use ($memcached) {
                 return new GracefulCacheRepository(
-                    new \SpartzMemcachedStore(
+                    new SpartzMemcachedStore(
                         $memcached,
                         $this->app['config']->get('cache.prefix')
                     )

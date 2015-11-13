@@ -1,5 +1,7 @@
 <?php
 
+namespace Atyagi\Elasticache;
+
 use Illuminate\Cache\MemcachedStore;
 use Illuminate\Cache\StoreInterface;
 use Illuminate\Support\Facades\Log;
