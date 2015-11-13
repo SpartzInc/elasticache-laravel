@@ -25,8 +25,8 @@
         "ext-memcached": "Leverage the Memcached extension for Elasticache connections."
     },
     "autoload": {
-        "psr-0": {
-            "Spartz\\Elasticache": "src/"
+        "psr-4": {
+            "Spartz\\Elasticache\\": "src"
         }
     },
     "minimum-stability": "stable"
