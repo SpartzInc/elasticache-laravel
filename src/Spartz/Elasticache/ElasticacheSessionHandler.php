@@ -1,4 +1,6 @@
-<?php namespace Atyagi\Elasticache;
+<?php
+
+namespace Spartz\Elasticache;
 
 use Illuminate\Contracts\Foundation\Application;
 use Memcached;
