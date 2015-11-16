@@ -25,7 +25,7 @@ class ElasticacheConnector
         }
 
         // Setting option for consistent hashing.
-        if (defined('\Memcached::OPT_CLIENT_MODE') && defined('\Memcached::DYNAMIC_CLIENT_MODE')) {
+        if (defined('\Memcached::OPT_DISTRIBUTION') && defined('\Memcached::DISTRIBUTION_CONSISTENT')) {
             $memcached->setOption(\Memcached::OPT_DISTRIBUTION, \Memcached::DISTRIBUTION_CONSISTENT);
         }
 
