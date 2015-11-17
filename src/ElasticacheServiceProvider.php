@@ -21,6 +21,11 @@ class ElasticacheServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // Make sure that our cache driver is Elasticache.
+        if ($this->app['config']->get('cache.driver', null) != 'elasticache') {
+            return;
+        }
+
         // Get our Memcached servers and connect to them.
         $servers = $this->app['config']->get('cache.memcached');
         $elasticache = new ElasticacheConnector();
